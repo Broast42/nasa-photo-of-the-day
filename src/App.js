@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "./components/Header";
 import Body from "./components/body-components/Body";
 import Footer from "./components/Footer";
+import Choose from "./components/Choose";
 import "./App.css";
 
 function App() {
@@ -25,12 +26,10 @@ function App() {
   return (
     <div className="App">
       <Header date={nasa.date}/>
-      <Body title={nasa.title} picture={nasa.hdurl} description={nasa.explanation}/> 
+      <Body title={nasa.title} picture={nasa.hdurl} description={nasa.explanation}/>
       <Footer copyright={nasa.copyright}/>
-      {/* <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p> */}
+      <Choose/>
+      
     </div>
   );
 }
