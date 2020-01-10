@@ -10,6 +10,7 @@ import "./App.css";
 const PageWrapper = styled.div`
   width: 900px;
   margin: 0px auto;
+  background: #00004d;
 `;
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   
   useEffect(()=>{
     axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+      .get(`https://api.nasa.gov/planetary/apod?api_key=rF8vrbsi27mHmdwRF2Gt8cE2xIHi2CL1nQIf6izv`)
       .then(res =>{
         setNasa(res.data);
       })
@@ -35,8 +36,6 @@ function App() {
       <Body title={nasa.title} picture={nasa.hdurl} description={nasa.explanation} copyright={nasa.copyright}/>
       <Choose/>
       <Footer/>
-      
-      
     </PageWrapper>
   );
 }
