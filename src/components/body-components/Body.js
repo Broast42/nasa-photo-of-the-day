@@ -6,7 +6,7 @@ export default function Body(props){
     return(
         <div>
             <h2>{props.title}</h2>
-            <Pic picture={props.picture} />
+            <Pic picture={props.picture} copyright={props.copyright}/>
             <Description description={props.description}/>
         </div>
             

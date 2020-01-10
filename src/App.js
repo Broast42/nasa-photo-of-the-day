@@ -4,7 +4,13 @@ import Header from "./components/Header";
 import Body from "./components/body-components/Body";
 import Footer from "./components/Footer";
 import Choose from "./components/Choose";
+import styled from "styled-components"; 
 import "./App.css";
+
+const PageWrapper = styled.div`
+  width: 900px;
+  margin: 0px auto;
+`;
 
 function App() {
   const [nasa, setNasa] = useState([]);
@@ -24,13 +30,14 @@ function App() {
 
 
   return (
-    <div className="App">
+    <PageWrapper>
       <Header date={nasa.date}/>
-      <Body title={nasa.title} picture={nasa.hdurl} description={nasa.explanation}/>
-      <Footer copyright={nasa.copyright}/>
+      <Body title={nasa.title} picture={nasa.hdurl} description={nasa.explanation} copyright={nasa.copyright}/>
       <Choose/>
+      <Footer/>
       
-    </div>
+      
+    </PageWrapper>
   );
 }
 
