@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
    background: #002db3;
    color: white;
-   height: 150px;
+   min-height: 150px;
    border-bottom: 10px solid #cc0000;
    text-align: center;
    padding: 20px; 
@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
 
 const StyledH1 = styled.h1`
     font-size: 3rem;
+    text-shadow: 2px 3px 2px darkred;
 `;
 
 const StyledP = styled.p`

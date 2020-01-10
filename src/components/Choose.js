@@ -34,7 +34,8 @@ const Container2 = styled(Container)`
 `;
 
 const ChooseImg = styled.img`
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border: 4px solid #cc0000;
     border-radius: 12px;
 `;

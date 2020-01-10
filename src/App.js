@@ -8,7 +8,7 @@ import styled from "styled-components";
 import "./App.css";
 
 const PageWrapper = styled.div`
-  width: 900px;
+  max-width: 900px;
   margin: 0px auto;
   background: #00004d;
 `;
